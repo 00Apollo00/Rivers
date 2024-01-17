@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="demo-page">
+
+  <main class="demo-page-content">
+
+
+
+
+
+
+    <section>
+
+
+      <div class="href-target" id="input-types"></div>
+      <h1>
+        Расчет уровня воды на 14 дней
+      </h1>
+      <p>Реке "Подкаменная Тунгуска" поселок "Ванавара" </p>
+
+      <div class="nice-form-group">
+        <label>Начальная дата</label>
+        <input type="date" value="2018-07-22" required/>
+      </div>
+
+      <div class="nice-form-group">
+        <label>Температура за предыдущие 7 дней </label>
+        <input type="text" placeholder="Формат ввода : -5,-10,-5,-2,0,5,1,4" value="" required/>
+      </div>
+
+      <div class="nice-form-group">
+        <label>Прогноз температуры на 14 дней</label>
+        <input type="text" placeholder="Формат ввода : -5,-10,-5,-2,0,5,1,4" value="" required/>
+      </div>
+
+      <div class="nice-form-group">
+        <label>Уровень воды за предыдущие дни</label>
+        <input type="url" placeholder="Формат ввода : 50,51,56, 72,102,140,250,331" value="" required/>
+      </div>
+
+      <div class="nice-form-group">
+        <label></label>
+        <input type="password" placeholder="Your password" required/>
+      </div>
+
+      <div class="nice-form-group">
+        <label>Search</label>
+        <input type="search" placeholder="Search all the things" value="" required/>
+      </div>
+
+      <div class="nice-form-group">
+        <label>Disabled field</label>
+        <input type="text" disabled placeholder="Your name" value="" required/>
+      </div>
+      <details>
+        <summary>
+          <div class="toggle-code">
+
+            Рсчиать
+          </div>
+        </summary>
+        <script src="https://gist.github.com/nielsVoogt/e25c9c8f2b8456bbd1239b775d21333f.js"></script>
+      </details>
+    </section>
+
+
+
+
+    <section>
+      <div class="href-target" id="validation"></div>
+      <h1>
+
+        Field Validation
+      </h1>
+      <p>
+        Fields that have a <code>required</code> attribute can be valid or
+        invalid based on their value. When a user focuses on a invalid field
+        the styling is set back to default.
+      </p>
+
+      <div class="nice-form-group">
+        <label>Email</label>
+        <input type="email" placeholder="Your email" value="this is not a email adress" required />
+      </div>
+
+      <div class="nice-form-group">
+        <label>Email</label>
+        <input type="email" placeholder="Your email" value="nice@forms.com" required />
+      </div>
+      <details>
+        <summary>
+          <div class="toggle-code">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+            Toggle code
+          </div>
+        </summary>
+        <script src="https://gist.github.com/nielsVoogt/75ebf8c12ca420eb2089312a931ab4cf.js"></script>
+      </details>
+    </section>
+
+    <section>
+      <div class="href-target" id="date"></div>
+      <h1>
+
+        Date input
+      </h1>
+      <p>
+        Date fields show icons by default. The <code>month</code>,
+        <code>week</code> and <code>date</code> fields have a fixed min
+        width set at 14em. <code>time</code> is set at 7em.
+      </p>
+
+      <div class="nice-form-group">
+        <label>Month</label>
+        <input type="month" value="2018-05" />
+      </div>
+
+      <div class="nice-form-group">
+        <label>Week</label>
+        <input type="week" value="2017-W01" />
+      </div>
+
+      <div class="nice-form-group">
+        <label>Date</label>
+        <input type="date" value="2018-07-22" />
+      </div>
+
+      <div class="nice-form-group">
+        <label>Time</label>
+        <input type="time" value="13:30" />
+      </div>
+
+      <details>
+        <summary>
+          <div class="toggle-code">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+            Toggle code
+          </div>
+        </summary>
+        <script src="https://gist.github.com/nielsVoogt/2ae279af287e520f545285b0d7c45828.js"></script>
+      </details>
+    </section>
+
+
+
+
+
+
+    <footer>Made with ♥ for CSS</footer>
+  </main>
+</div>
+
+  
+{% endblock %}
