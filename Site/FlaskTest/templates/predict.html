@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{ super() }}
+
+ <div class="demo-page">
+
+
+  <main class="demo-page-content">
+
+    <h1> Предсказанный уровень реки на 14 дней</h1>
+      <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">День года</th>
+      <th scope="col">Уровень воды в реке</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for day,val in  predict %}
+
+    <tr>
+      <td>{{ day }}</td>
+      <td>{{ val }}</td>
+    </tr>
+
+  {% endfor %}
+
+  </tbody>
+</table>
+
+       <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+  </main>
+ </div>
+
+
+{% endblock %}
